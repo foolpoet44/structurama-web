@@ -36,6 +36,7 @@ export const TrainingGrid = () => {
                 badges={[{ type: "selection", label: "선발" }]}
                 variant="prd"
                 size="sm"
+                courseId="lg-ai-graduate"
               />
               <CourseCard
                 title="인공지능 고급 (2주)"
@@ -50,6 +51,7 @@ export const TrainingGrid = () => {
                 badges={[{ type: "selection", label: "선발" }]}
                 variant="prd"
                 size="sm"
+                courseId="lg-ai-expert-course"
               />
               <CourseCard
                 title="빅데이터 DS 고급 (7주)"
@@ -66,6 +68,7 @@ export const TrainingGrid = () => {
               title="LLM Agent고급 챗봇 개발"
               variant="ai"
               size="sm"
+              courseId="genai-llm-agent"
             />
           </div>
         </div>
@@ -86,11 +89,13 @@ export const TrainingGrid = () => {
               ]}
               variant="prd"
               size="sm"
+              courseId="physical-ai-leader"
             />
             <CourseCard
               title="AI Jump Up Camp(9일)"
               badges={[{ type: "selection", label: "선발" }]}
               variant="prd"
+              courseId="ai-jump-up-camp"
             />
             <CourseCard
               title="AI Scientist 중급"
@@ -101,26 +106,26 @@ export const TrainingGrid = () => {
           <div className="bg-card p-3 rounded-lg border">
             <div className="grid grid-cols-2 gap-2">
               <div className="space-y-2">
-                <CourseCard title="머신 러닝 II" isOnline variant="sw" size="sm" />
-                <CourseCard title="머신 러닝 I" isOnline variant="sw" size="sm" />
+                <CourseCard title="머신 러닝 II" isOnline variant="sw" size="sm" courseId="elice-machine-learning-2" />
+                <CourseCard title="머신 러닝 I" isOnline variant="sw" size="sm" courseId="elice-machine-learning-1" />
               </div>
               <div className="space-y-2">
                 <div className="flex gap-1">
-                  <CourseCard title="CNN/RNN 활용하기" isOnline variant="sw" size="sm" />
-                  <CourseCard title="YOLO를 이용한 객체 인식" isOnline variant="sw" size="sm" />
+                  <CourseCard title="CNN/RNN 활용하기" isOnline variant="sw" size="sm" courseId="elice-cnn-rnn-application" />
+                  <CourseCard title="YOLO를 이용한 객체 인식" isOnline variant="sw" size="sm" courseId="elice-yolo-object-detection" />
                 </div>
                 <div className="flex gap-1">
-                  <CourseCard title="CNN/RNN 이해하기" isOnline variant="sw" size="sm" />
-                  <CourseCard title="이미지 처리 알고리즘" isOnline variant="sw" size="sm" />
+                  <CourseCard title="CNN/RNN 이해하기" isOnline variant="sw" size="sm" courseId="elice-cnn-rnn-understanding" />
+                  <CourseCard title="이미지 처리 알고리즘" isOnline variant="sw" size="sm" courseId="elice-image-processing" />
                 </div>
-                <CourseCard title="딥러닝 기초" isOnline variant="sw" size="sm" />
+                <CourseCard title="딥러닝 기초" isOnline variant="sw" size="sm" courseId="elice-deep-learning-basic" />
               </div>
             </div>
           </div>
           <div className="bg-card p-3 rounded-lg border space-y-2">
-            <CourseCard title="RAG기초와 파이프 라인" variant="udemy" size="sm" />
-            <CourseCard title="RAG를 위한 Langchain" variant="udemy" size="sm" />
-            <CourseCard title="바이브 코딩과 MCP" variant="udemy" size="sm" />
+            <CourseCard title="RAG기초와 파이프 라인" variant="udemy" size="sm" courseId="udemy-rag-basics" />
+            <CourseCard title="RAG를 위한 Langchain" variant="udemy" size="sm" courseId="udemy-rag-langchain" />
+            <CourseCard title="바이브 코딩과 MCP" variant="udemy" size="sm" courseId="udemy-vibe-coding-mcp" />
           </div>
           <div className="bg-card p-3 rounded-lg border"></div>
         </div>
@@ -139,28 +144,30 @@ export const TrainingGrid = () => {
               badges={[{ type: "new", label: "신규" }]}
               variant="prd"
               size="sm"
+              courseId="vibe-coding-ax-problem-solving"
             />
             <CourseCard
               title="AI Literacy & AX Problem Solving (2일)"
               badges={[{ type: "new", label: "신규" }]}
               variant="prd"
               size="sm"
+              courseId="ai-literacy-ax-problem-solving"
             />
           </div>
           <div className="bg-card p-3 rounded-lg border">
             <div className="grid grid-cols-2 gap-2">
-              <CourseCard title="파이썬 데이터 분석 기초 (2주)" isOnline variant="sw" size="sm" />
-              <CourseCard title="파이썬 데이터 분석 기초_Training (2주)" isOnline variant="sw" size="sm" />
+              <CourseCard title="파이썬 데이터 분석 기초 (2주)" isOnline variant="sw" size="sm" courseId="elice-python-data-analysis" />
+              <CourseCard title="파이썬 데이터 분석 기초_Training (2주)" isOnline variant="sw" size="sm" courseId="elice-python-data-analysis-training" />
             </div>
           </div>
           <div className="bg-card p-3 rounded-lg border space-y-2">
-            <CourseCard title="인공지능 이해를 위한 머신러닝 기초 다지기" variant="udemy" size="sm" />
-            <CourseCard title="딥러닝의 모든 것 with Python, Tensorflow, Pytorch" variant="udemy" size="sm" />
-            <CourseCard title="비즈니스 분석 및 DS를 위한 핵심통계학" variant="udemy" size="sm" />
+            <CourseCard title="인공지능 이해를 위한 머신러닝 기초 다지기" variant="udemy" size="sm" courseId="udemy-ml-basics" />
+            <CourseCard title="딥러닝의 모든 것 with Python, Tensorflow, Pytorch" variant="udemy" size="sm" courseId="udemy-deep-learning-all" />
+            <CourseCard title="비즈니스 분석 및 DS를 위한 핵심통계학" variant="udemy" size="sm" courseId="udemy-statistics-ds" />
           </div>
           <div className="bg-card p-3 rounded-lg border space-y-2">
-            <CourseCard title="비즈니스 콘텐츠 제작 AI이미지/영상만들기" variant="ai" size="sm" />
-            <CourseCard title="생성형 AI를 활용한 업무 자동화" variant="ai" size="sm" />
+            <CourseCard title="비즈니스 콘텐츠 제작 AI이미지/영상만들기" variant="ai" size="sm" courseId="genai-business-content" />
+            <CourseCard title="생성형 AI를 활용한 업무 자동화" variant="ai" size="sm" courseId="genai-automation" />
           </div>
         </div>
 
@@ -175,16 +182,16 @@ export const TrainingGrid = () => {
             <div className="grid grid-cols-2 gap-2">
               <div className="space-y-2">
                 <CourseCard title="생성형 AI 입문" isOnline variant="sw" size="sm" />
-                <CourseCard title="파이썬 기초 (파이썬 기초1, 2, NumPy/Pandas 기초)" isOnline variant="sw" size="sm" />
+                <CourseCard title="파이썬 기초 (파이썬 기초1, 2, NumPy/Pandas 기초)" isOnline variant="sw" size="sm" courseId="elice-python-basic" />
               </div>
-              <CourseCard title="파이썬 기초_Training (파이썬 기초문제집, NumPy/Pandas 작습서)" isOnline variant="sw" size="sm" />
+              <CourseCard title="파이썬 기초_Training (파이썬 기초문제집, NumPy/Pandas 작습서)" isOnline variant="sw" size="sm" courseId="elice-python-training" />
             </div>
           </div>
           <div className="bg-card p-3 rounded-lg border">
-            <CourseCard title="MS365 Copilot 마스터 클래스" variant="udemy" size="sm" />
+            <CourseCard title="MS365 Copilot 마스터 클래스" variant="udemy" size="sm" courseId="udemy-ms365-copilot" />
           </div>
           <div className="bg-card p-3 rounded-lg border">
-            <CourseCard title="세일즈&마케팅 프로세스 AI 리터칭 과정" variant="ai" size="sm" />
+            <CourseCard title="세일즈&마케팅 프로세스 AI 리터칭 과정" variant="ai" size="sm" courseId="genai-sales-marketing" />
           </div>
         </div>
 

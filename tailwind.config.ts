@@ -57,6 +57,24 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        level: {
+          expert: "hsl(var(--level-expert))",
+          advanced: "hsl(var(--level-advanced))",
+          intermediate: "hsl(var(--level-intermediate))",
+          beginner: "hsl(var(--level-beginner))",
+        },
+        badge: {
+          selection: "hsl(var(--badge-selection))",
+          new: "hsl(var(--badge-new))",
+        },
+        course: {
+          prd: "hsl(var(--course-prd))",
+          cto: "hsl(var(--course-cto))",
+          hr: "hsl(var(--course-hr))",
+          sw: "hsl(var(--course-sw))",
+          udemy: "hsl(var(--course-udemy))",
+          ai: "hsl(var(--course-ai))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

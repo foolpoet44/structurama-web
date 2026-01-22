@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 interface CourseCardProps {
   title: string;
@@ -7,6 +8,7 @@ interface CourseCardProps {
   isOnline?: boolean;
   className?: string;
   size?: "sm" | "md" | "lg";
+  courseId?: string;
 }
 
 const variantStyles = {
@@ -31,8 +33,9 @@ export const CourseCard = ({
   isOnline = false,
   className,
   size = "md",
+  courseId,
 }: CourseCardProps) => {
-  return (
+  const content = (
     <div
       className={cn(
         "rounded-md transition-all duration-200 hover:shadow-lg hover:scale-[1.02] cursor-pointer",
@@ -61,4 +64,10 @@ export const CourseCard = ({
       </div>
     </div>
   );
+
+  if (courseId) {
+    return <Link to={`/course/${courseId}`}>{content}</Link>;
+  }
+
+  return content;
 };

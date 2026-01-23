@@ -38,7 +38,8 @@ export const CourseCard = ({
   const content = (
     <div
       className={cn(
-        "rounded-md transition-all duration-200 hover:shadow-lg hover:scale-[1.02] cursor-pointer",
+        "rounded-md transition-all duration-200",
+        courseId ? "hover:shadow-lg hover:scale-[1.02] cursor-pointer" : "cursor-default",
         variantStyles[variant],
         sizeStyles[size],
         className

@@ -19,7 +19,7 @@ export interface CourseDetail {
   isNew?: boolean;
   isSelection?: boolean;
   isOnline?: boolean;
-  
+
   // 개요
   objectives: string[];
   target: string;
@@ -29,31 +29,31 @@ export interface CourseDetail {
   capacity: string;
   duration: string;
   cost?: string;
-  
+
   // 이수기준
   criteria?: {
     standard: number;
     ratio: string;
     passScore: string;
   };
-  
+
   // 커리큘럼
   modules?: CourseModule[];
-  
+
   // 일정
   schedule?: CourseSchedule[];
   scheduleNote?: string;
-  
+
   // 담당자
   instructor?: string;
   manager?: {
     name: string;
     email: string;
   };
-  
+
   // 특이사항
   notes?: string[];
-  
+
   // 후속과정
   nextCourses?: string[];
 }
@@ -270,7 +270,7 @@ export const courseData: CourseDetail[] = [
     duration: "12주",
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" }
   },
-  
+
   // =====================
   // 엘리스 온라인 과정
   // =====================
@@ -605,7 +605,7 @@ export const courseData: CourseDetail[] = [
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" },
     scheduleNote: "신청일로부터 2개월 간 자율 학습"
   },
-  
+
   // =====================
   // Udemy 과정
   // =====================
@@ -729,7 +729,7 @@ export const courseData: CourseDetail[] = [
     duration: "자율 학습",
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" }
   },
-  
+
   // =====================
   // 전사 생성형 AI 과정
   // =====================
@@ -799,6 +799,95 @@ export const courseData: CourseDetail[] = [
     location: "전사 생성형 AI 플랫폼",
     capacity: "제한 없음",
     duration: "자율 학습",
+    manager: { name: "조대근 책임", email: "dk.cho@lge.com" }
+  },
+  {
+    id: "lg-ai-advanced",
+    title: "인공지능 고급",
+    category: "offline",
+    level: "expert",
+    variant: "cto",
+    isSelection: true,
+    objectives: ["인공지능 핵심 알고리즘 심화 학습", "최신 AI 기술 트렌드 및 현업 적용 사례 연구"],
+    target: "AI 직무 전문가",
+    format: "집합교육",
+    location: "마곡 LG 사이언스파크",
+    capacity: "선발",
+    duration: "2주",
+    manager: { name: "조대근 책임", email: "dk.cho@lge.com" }
+  },
+  {
+    id: "big-data-ds-advanced",
+    title: "빅데이터 DS 고급",
+    category: "offline",
+    level: "expert",
+    variant: "cto",
+    isSelection: true,
+    objectives: ["대규모 데이터 기반 의사결정 모델링", "복잡한 비즈니스 문제 해결을 위한 데이터 사이언스 심화"],
+    target: "데이터 사이언티스트 전문가",
+    format: "집합교육",
+    location: "마곡 LG 사이언스파크",
+    capacity: "선발",
+    duration: "7주",
+    manager: { name: "조대근 책임", email: "dk.cho@lge.com" }
+  },
+  {
+    id: "ai-scientist-intermediate",
+    title: "AI Scientist 중급",
+    category: "offline",
+    level: "advanced",
+    variant: "sw",
+    objectives: ["머신러닝/딥러닝 알고리즘의 실전 응용", "현업 데이터 기반 모델 학습 및 성능 최적화"],
+    target: "AI 직무 수행자 및 희망자",
+    format: "집합/혼합",
+    location: "러닝센터",
+    capacity: "30",
+    duration: "별도안내",
+    manager: { name: "조대근 책임", email: "dk.cho@lge.com" }
+  },
+  {
+    id: "ms-copilot-master",
+    title: "MS Copilot 마스터",
+    category: "offline",
+    level: "beginner",
+    variant: "hr",
+    isOnline: true,
+    objectives: ["MS Copilot의 핵심 기능 이해 및 실무 적용", "AI 업무 비서를 통한 생산성 극대화"],
+    target: "전사 임직원",
+    format: "온라인",
+    location: "러닝넷",
+    capacity: "제한 없음",
+    duration: "1일",
+    manager: { name: "조대근 책임", email: "dk.cho@lge.com" }
+  },
+  {
+    id: "data-literacy-problem-solving",
+    title: "데이터 리터러시와 데이터기반 문제해결",
+    category: "offline",
+    level: "beginner",
+    variant: "hr",
+    isOnline: true,
+    objectives: ["데이터 읽기, 쓰기, 분석 역량 함양", "데이터 기반의 논리적 문제 해결 프로세스 체득"],
+    target: "전사 임직원",
+    format: "온라인",
+    location: "러닝넷",
+    capacity: "제한 없음",
+    duration: "자율",
+    manager: { name: "조대근 책임", email: "dk.cho@lge.com" }
+  },
+  {
+    id: "genai-intro",
+    title: "생성형 AI 입문",
+    category: "elice",
+    level: "beginner",
+    variant: "sw",
+    isOnline: true,
+    objectives: ["생성형 AI의 기본 원리와 활용 가능성 이해", "프롬프트 엔지니어링 기초 습득"],
+    target: "AI 입문 희망자",
+    format: "E-Learning",
+    location: "엘리스 플랫폼",
+    capacity: "제한 없음",
+    duration: "자율",
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" }
   }
 ];

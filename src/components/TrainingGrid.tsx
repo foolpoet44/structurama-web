@@ -43,6 +43,7 @@ export const TrainingGrid = () => {
                 badges={[{ type: "selection", label: "선발" }]}
                 variant="cto"
                 size="sm"
+                courseId="lg-ai-advanced"
               />
             </div>
             <div className="flex gap-2 flex-wrap">
@@ -58,6 +59,7 @@ export const TrainingGrid = () => {
                 badges={[{ type: "selection", label: "선발" }]}
                 variant="cto"
                 size="sm"
+                courseId="big-data-ds-advanced"
               />
             </div>
           </div>
@@ -101,6 +103,7 @@ export const TrainingGrid = () => {
               title="AI Scientist 중급"
               variant="sw"
               size="sm"
+              courseId="ai-scientist-intermediate"
             />
           </div>
           <div className="bg-card p-3 rounded-lg border">
@@ -175,13 +178,13 @@ export const TrainingGrid = () => {
         <div className="grid grid-cols-[180px_1fr_1fr_180px_200px] gap-2 mb-4">
           <LevelIndicator level="beginner" title="" />
           <div className="bg-card p-3 rounded-lg border space-y-2">
-            <CourseCard title="MS Copilot 마스터 (1일)" isOnline variant="hr" size="sm" />
-            <CourseCard title="데이터 리터러시와 데이터기반 문제해결" isOnline variant="hr" size="sm" />
+            <CourseCard title="MS Copilot 마스터 (1일)" isOnline variant="hr" size="sm" courseId="ms-copilot-master" />
+            <CourseCard title="데이터 리터러시와 데이터기반 문제해결" isOnline variant="hr" size="sm" courseId="data-literacy-problem-solving" />
           </div>
           <div className="bg-card p-3 rounded-lg border">
             <div className="grid grid-cols-2 gap-2">
               <div className="space-y-2">
-                <CourseCard title="생성형 AI 입문" isOnline variant="sw" size="sm" />
+                <CourseCard title="생성형 AI 입문" isOnline variant="sw" size="sm" courseId="genai-intro" />
                 <CourseCard title="파이썬 기초 (파이썬 기초1, 2, NumPy/Pandas 기초)" isOnline variant="sw" size="sm" courseId="elice-python-basic" />
               </div>
               <CourseCard title="파이썬 기초_Training (파이썬 기초문제집, NumPy/Pandas 작습서)" isOnline variant="sw" size="sm" courseId="elice-python-training" />
@@ -209,7 +212,7 @@ export const TrainingGrid = () => {
           </div>
           <div className="flex items-center gap-2">
             <div className="w-6 h-4 bg-course-cto border-l-4 border-l-foreground/40 rounded"></div>
-            <span>CTO / SW Colle</span>
+            <span>CTO / SW College</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-6 h-4 bg-course-hr rounded"></div>

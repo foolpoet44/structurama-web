@@ -8,16 +8,16 @@ export const TrainingGrid = () => {
         {/* Header */}
         <div className="grid grid-cols-[180px_1fr_1fr_180px_200px] gap-2 mb-4">
           <div className="col-span-1"></div>
-          <div className="text-center font-bold text-lg bg-muted py-3 rounded-t-lg border-b-2 border-foreground/20">
+          <div className="text-center font-bold text-lg text-white py-3 rounded-t-lg" style={{ backgroundColor: '#5a5a5a' }}>
             집합 & e-러닝 과정
           </div>
-          <div className="text-center font-bold text-lg bg-muted py-3 rounded-t-lg border-b-2 border-foreground/20">
+          <div className="text-center font-bold text-lg text-white py-3 rounded-t-lg" style={{ backgroundColor: '#5a5a5a' }}>
             엘리스 온라인 과정
           </div>
-          <div className="text-center font-bold text-lg bg-muted py-3 rounded-t-lg border-b-2 border-foreground/20">
+          <div className="text-center font-bold text-lg text-white py-3 rounded-t-lg" style={{ backgroundColor: '#5a5a5a' }}>
             Udemy
           </div>
-          <div className="text-center font-bold text-lg bg-muted py-3 rounded-t-lg border-b-2 border-foreground/20">
+          <div className="text-center font-bold text-lg text-white py-3 rounded-t-lg" style={{ backgroundColor: '#5a5a5a' }}>
             전사 생성형 AI 과정
           </div>
         </div>

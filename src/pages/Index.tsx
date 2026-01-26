@@ -14,13 +14,6 @@ const Index = () => {
       <main className="max-w-[1400px] mx-auto py-8">
         <TrainingGrid />
       </main>
-
-      {/* Footer */}
-      <footer className="bg-muted py-6 mt-8">
-        <div className="max-w-[1400px] mx-auto px-8 text-center text-sm text-muted-foreground">
-          © 2024 Manufacturing AX Training System. All rights reserved.
-        </div>
-      </footer>
     </div>
   );
 };

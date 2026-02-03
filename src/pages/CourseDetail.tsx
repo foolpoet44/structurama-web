@@ -42,7 +42,7 @@ const CourseDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="bg-primary text-primary-foreground py-6 px-8 shadow-lg">
+      <header className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground py-8 px-8 shadow-lg">
         <div className="max-w-[1200px] mx-auto">
           <Link to="/" className="inline-flex items-center text-primary-foreground/80 hover:text-primary-foreground mb-4 transition-colors">
             <ArrowLeft className="mr-2 h-4 w-4" />

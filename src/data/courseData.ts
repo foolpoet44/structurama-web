@@ -98,7 +98,8 @@ export const courseData: CourseDetail[] = [
     ],
     instructor: "사외강사",
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" },
-    notes: ["상기 일정은 강의를 준비 중에 여러 요인에 인하여 일정이 변경될 수 있으며, 정확한 일정은 러닝넷 홈페이지를 참조 부탁 드립니다."]
+    notes: ["상기 일정은 강의를 준비 중에 여러 요인에 인하여 일정이 변경될 수 있으며, 정확한 일정은 러닝넷 홈페이지를 참조 부탁 드립니다."],
+    nextCourses: ["ai-literacy-ax-problem-solving"]
   },
   {
     id: "ai-literacy-ax-problem-solving",
@@ -187,17 +188,19 @@ export const courseData: CourseDetail[] = [
     },
     modules: [
       { id: "실습", title: "현업 AX 과제 실습 / 전문가 멘토링 지원", type: "실습" },
-      { id: "발표", title: "모델 정의서 발표, 피드백 및 수정", type: "발표" },
+      { id: "발표1", title: "모델 정의서 발표, 피드백 및 수정", type: "발표" },
+      { id: "발표2", title: "모델 구현, 피드백 및 수정, 중간 발표", type: "발표" },
       { id: "최종", title: "시험 운영, 성능 개선, 최적화, 최종 발표", type: "발표" }
     ],
     schedule: [
-      { session: "1차수", period: "4월 ~ 5월 (대상자 별도 안내)" }
+      { session: "1차수", period: "4월 ~ 6월 (대상자 별도 안내)" }
     ],
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" },
     notes: [
       "현업문제를 가지고 실습하면서 실제 활용에 대한 자신감을 얻을 수 있었음",
       "현업 문제에 활용할 수 있는 다양한 예제와 최신 기술동향을 배울 수 있어 도움이 되었으며, 향후에 활용해보고 싶다는 의지가 생겼음"
-    ]
+    ],
+    nextCourses: ["physical-ai-leader", "lg-ai-expert-course"]
   },
   {
     id: "physical-ai-leader",
@@ -216,23 +219,25 @@ export const courseData: CourseDetail[] = [
     location: "사외 대학기관",
     capacity: "선발",
     duration: "6주",
-    cost: "별도안내",
+    cost: "별도안내 (교육비용 이체 건은 사전에 안내 예정)",
     criteria: {
       standard: 100,
       ratio: "평가 80% / 태도 20%",
       passScore: "70"
     },
     modules: [
-      { id: "M1", title: "Physical AI 개념 및 필요성 / CPS 기반 스마트 제조 구조 이해", type: "강의" },
-      { id: "M2", title: "설비·공정 데이터 수집 및 신호 해석 기초 / IoT/센서 기반 계측 기술", type: "강의 실습" },
-      { id: "M3", title: "디지털 트윈 모델링 & 운영 시뮬레이션", type: "강의 실습" },
-      { id: "M4", title: "머신러닝/딥러닝 기반 물리 데이터 분석 / 로보틱스 제조 현장 적용", type: "강의 실습" }
+      { id: "M1", title: "Physical AI 개념 및 필요성 / CPS(Cyber Physical System) 기반 스마트 제조 구조 이해", type: "강의" },
+      { id: "M2", title: "설비·공정 데이터 수집 및 신호 해석 기초 / IoT/센서 기반 계측 기술 / 공정 이상 탐지·Log 분석 / Test Mining", type: "강의 실습" },
+      { id: "M3", title: "디지털 트윈 모델링 & 운영 시뮬레이션 / 데이터 기반 대리모델(서로게이트) / 이산사건 시뮬레이션(DES), 에이전트 기반(ABS)", type: "강의 실습" },
+      { id: "M4", title: "머신러닝/딥러닝 기반 물리 데이터 분석 / 시계열·진동·전류·온도 신호의 전처리/특징추출 / 지도/비지도 기반 이상탐지", type: "강의 실습" },
+      { id: "M5", title: "로보틱스(산업용·협동로봇·AMR) 제조 현장 적용 및 제어", type: "강의 실습" }
     ],
     schedule: [
-      { session: "1차수", period: "별도 안내" }
+      { session: "1차수", period: "7월 ~ 8월 (대상자 별도 안내)" }
     ],
     instructor: "외부대학교 교수진",
-    manager: { name: "조대근 책임", email: "dk.cho@lge.com" }
+    manager: { name: "조대근 책임", email: "dk.cho@lge.com" },
+    nextCourses: ["lg-ai-expert-course"]
   },
   {
     id: "lg-ai-graduate",
@@ -793,6 +798,23 @@ export const courseData: CourseDetail[] = [
     objectives: [
       "세일즈 및 마케팅 프로세스에 AI 적용",
       "AI 리터칭 기술 활용법 학습"
+    ],
+    target: "생산기술원 구성원",
+    format: "온라인",
+    location: "전사 생성형 AI 플랫폼",
+    capacity: "제한 없음",
+    duration: "자율 학습",
+    manager: { name: "조대근 책임", email: "dk.cho@lge.com" }
+  },
+  {
+    id: "genai-ms-copilot-advanced",
+    title: "MS 코파일럿 고급 활용법",
+    category: "genai",
+    level: "advanced",
+    variant: "ai",
+    objectives: [
+      "MS Copilot의 고급 기능 이해 및 실무 적용",
+      "AI 기반 업무 생산성 극대화 기법 습득"
     ],
     target: "생산기술원 구성원",
     format: "온라인",

@@ -38,21 +38,27 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
-    /* Custom colors for the training system */
-    --level-expert: 0 75% 55%;
-    --level-advanced: 25 90% 55%;
-    --level-intermediate: 45 85% 55%;
-    --level-beginner: 145 55% 45%;
+    /* Custom colors for the training system - Matching PPT design */
+    /* Level indicators - gradient from red (expert) to green (beginner) */
+    --level-expert: 0 72% 50%;
+    --level-advanced: 28 95% 52%;
+    --level-intermediate: 48 95% 50%;
+    --level-beginner: 145 65% 42%;
     
-    --badge-selection: 145 60% 40%;
-    --badge-new: 45 90% 50%;
+    /* Badge colors - more vibrant for visibility */
+    --badge-selection: 145 70% 38%;
+    --badge-new: 45 100% 50%;
     
+    /* Course card variants - matched to PPT's color scheme */
     --course-prd: 0 0% 100%;
-    --course-cto: 220 15% 92%;
-    --course-hr: 45 30% 88%;
-    --course-sw: 145 40% 92%;
-    --course-udemy: 35 60% 90%;
-    --course-ai: 200 30% 92%;
+    --course-cto: 220 20% 94%;
+    --course-hr: 48 50% 92%;
+    --course-sw: 160 45% 94%;
+    --course-udemy: 32 70% 92%;
+    --course-ai: 210 40% 94%;
+    
+    /* Header background - dark gray from PPT */
+    --header-bg: 0 0% 35%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;

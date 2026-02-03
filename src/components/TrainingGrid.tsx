@@ -48,18 +48,33 @@ export const TrainingGrid = () => {
             </div>
             <div className="flex gap-2 flex-wrap">
               <CourseCard
-                title="LG AI Expert Course (12주) (현업 문제 해결 코칭)"
+                title="AI Specialist (16주)"
+                badges={[{ type: "selection", label: "선발" }]}
+                variant="prd"
+                size="sm"
+                courseId="ai-specialist"
+              />
+              <CourseCard
+                title="AI Scientist 고급 (7주)"
+                badges={[{ type: "selection", label: "선발" }]}
+                variant="cto"
+                size="sm"
+                courseId="ai-scientist-advanced"
+              />
+            </div>
+            <div className="flex gap-2 flex-wrap">
+              <CourseCard
+                title="LG AI Expert Course (12주)"
                 badges={[{ type: "selection", label: "선발" }]}
                 variant="prd"
                 size="sm"
                 courseId="lg-ai-expert-course"
               />
               <CourseCard
-                title="빅데이터 DS 고급 (7주)"
-                badges={[{ type: "selection", label: "선발" }]}
+                title="Data Engineer 고급 (5일)"
                 variant="cto"
                 size="sm"
-                courseId="big-data-ds-advanced"
+                courseId="data-engineer-advanced"
               />
             </div>
           </div>
@@ -99,12 +114,20 @@ export const TrainingGrid = () => {
               variant="prd"
               courseId="ai-jump-up-camp"
             />
-            <CourseCard
-              title="AI Scientist 중급"
-              variant="sw"
-              size="sm"
-              courseId="ai-scientist-intermediate"
-            />
+            <div className="flex gap-2 flex-wrap">
+              <CourseCard
+                title="AI Scientist 중급(5일)"
+                variant="cto"
+                size="sm"
+                courseId="ai-scientist-intermediate"
+              />
+              <CourseCard
+                title="Data Engineer 중급 (5일)"
+                variant="cto"
+                size="sm"
+                courseId="data-engineer-intermediate"
+              />
+            </div>
           </div>
           <div className="bg-card p-3 rounded-lg border">
             <div className="grid grid-cols-2 gap-2">
@@ -128,20 +151,26 @@ export const TrainingGrid = () => {
           <div className="bg-card p-3 rounded-lg border space-y-2">
             <CourseCard title="RAG기초와 파이프 라인" variant="udemy" size="sm" courseId="udemy-rag-basics" />
             <CourseCard title="RAG를 위한 Langchain" variant="udemy" size="sm" courseId="udemy-rag-langchain" />
+            <CourseCard title="MS코파일럿 고급활용법" variant="udemy" size="sm" courseId="genai-ms-copilot-advanced" />
             <CourseCard 
-              title="바이브 코딩과 MCP_커서로 시작하기" 
-              badges={[{ type: "new", label: "신규" }]}
+              title="바이브 코딩과 MCP" 
               variant="udemy" 
               size="sm" 
               courseId="udemy-vibe-coding-mcp" 
             />
-          </div>
-          <div className="bg-card p-3 rounded-lg border">
             <CourseCard 
-              title="MS 코파일럿 고급 활용법" 
+              title="인공지능 이해를 위한 머신러닝 기초 다지기" 
+              variant="udemy" 
+              size="sm" 
+              courseId="udemy-ml-basics" 
+            />
+          </div>
+          <div className="bg-card p-3 rounded-lg border space-y-2">
+            <CourseCard 
+              title="비즈니스 콘텐츠 제작 AI이미지/영상만들기" 
               variant="ai" 
               size="sm" 
-              courseId="genai-ms-copilot-advanced" 
+              courseId="genai-business-content" 
             />
           </div>
         </div>
@@ -156,25 +185,11 @@ export const TrainingGrid = () => {
           />
           <div className="bg-card p-3 rounded-lg border space-y-2">
             <CourseCard
-              title="바이브 코딩 기반의 MVP 구축(1일)"
+              title="AI 기반 문제발굴/해결 실전 (2일)"
               badges={[{ type: "new", label: "신규" }]}
               variant="prd"
               size="sm"
-              courseId="vibe-coding-mvp"
-            />
-            <CourseCard
-              title="바이브 코딩 기반의 AX 문제 해결(2일)"
-              badges={[{ type: "new", label: "신규" }]}
-              variant="prd"
-              size="sm"
-              courseId="vibe-coding-ax-problem-solving"
-            />
-            <CourseCard
-              title="AI Literacy & AX Problem Solving (2일)"
-              badges={[{ type: "new", label: "신규" }]}
-              variant="prd"
-              size="sm"
-              courseId="ai-literacy-ax-problem-solving"
+              courseId="ai-problem-solving"
             />
           </div>
           <div className="bg-card p-3 rounded-lg border">
@@ -184,12 +199,9 @@ export const TrainingGrid = () => {
             </div>
           </div>
           <div className="bg-card p-3 rounded-lg border space-y-2">
-            <CourseCard title="인공지능 이해를 위한 머신러닝 기초 다지기" variant="udemy" size="sm" courseId="udemy-ml-basics" />
             <CourseCard title="딥러닝의 모든 것 with Python, Tensorflow, Pytorch" variant="udemy" size="sm" courseId="udemy-deep-learning-all" />
-            <CourseCard title="비즈니스 분석 및 DS를 위한 핵심통계학" variant="udemy" size="sm" courseId="udemy-statistics-ds" />
           </div>
           <div className="bg-card p-3 rounded-lg border space-y-2">
-            <CourseCard title="비즈니스 콘텐츠 제작 AI이미지/영상만들기" variant="ai" size="sm" courseId="genai-business-content" />
             <CourseCard title="생성형 AI를 활용한 업무 자동화" variant="ai" size="sm" courseId="genai-automation" />
           </div>
         </div>
@@ -198,7 +210,12 @@ export const TrainingGrid = () => {
         <div className="grid grid-cols-[180px_1fr_1fr_180px_200px] gap-2 mb-4">
           <LevelIndicator level="beginner" title="" />
           <div className="bg-card p-3 rounded-lg border space-y-2">
-            <CourseCard title="MS Copilot 마스터 (1일)" isOnline variant="hr" size="sm" courseId="ms-copilot-master" />
+            <CourseCard 
+              title="바이브 코딩 기반의 MVP 구축(1일)" 
+              variant="prd" 
+              size="sm" 
+              courseId="vibe-coding-mvp" 
+            />
             <CourseCard title="데이터 리터러시와 데이터기반 문제해결" isOnline variant="hr" size="sm" courseId="data-literacy-problem-solving" />
           </div>
           <div className="bg-card p-3 rounded-lg border">
@@ -210,7 +227,8 @@ export const TrainingGrid = () => {
               <CourseCard title="파이썬 기초_Training (파이썬 기초문제집, NumPy/Pandas 작습서)" isOnline variant="sw" size="sm" courseId="elice-python-training" />
             </div>
           </div>
-          <div className="bg-card p-3 rounded-lg border">
+          <div className="bg-card p-3 rounded-lg border space-y-2">
+            <CourseCard title="비즈니스 분석 및 DS를 위한 핵심통계학" variant="udemy" size="sm" courseId="udemy-statistics-ds" />
             <CourseCard title="MS365 Copilot 마스터 클래스" variant="udemy" size="sm" courseId="udemy-ms365-copilot" />
           </div>
           <div className="bg-card p-3 rounded-lg border">
@@ -222,6 +240,11 @@ export const TrainingGrid = () => {
         <div className="bg-secondary/50 p-4 rounded-lg border text-center mb-6">
           <div className="font-medium">Ⓞ 생산기술원 제조 DX 의 이해</div>
           <div className="text-xs text-muted-foreground mt-1">*해당과정은 러닝넷에서 온라인 수강</div>
+        </div>
+
+        {/* Schedule Note */}
+        <div className="text-center text-xs text-muted-foreground mb-6">
+          * 상기 일정은 강의를 준비 중에 여러 요인에 인하여 일정이 변경될 수 있으며, 정확한 일정은 러닝넷 홈페이지를 참조 부탁 드립니다.
         </div>
 
         {/* Legend */}

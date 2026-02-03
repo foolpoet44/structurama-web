@@ -12,12 +12,12 @@ interface CourseCardProps {
 }
 
 const variantStyles = {
-  prd: "bg-course-prd border-2 border-foreground/20",
-  cto: "bg-course-cto border-l-4 border-l-foreground/40",
-  hr: "bg-course-hr",
-  sw: "bg-course-sw border border-accent/50",
-  udemy: "bg-course-udemy",
-  ai: "bg-course-ai",
+  prd: "bg-course-prd border-2 border-foreground/20 shadow-sm",
+  cto: "bg-course-cto border-l-4 border-l-primary/60 shadow-sm",
+  hr: "bg-course-hr shadow-sm",
+  sw: "bg-course-sw border border-accent/40 shadow-sm",
+  udemy: "bg-course-udemy border border-orange-300/50 shadow-sm",
+  ai: "bg-course-ai border border-blue-300/50 shadow-sm",
 };
 
 const sizeStyles = {
@@ -39,7 +39,7 @@ export const CourseCard = ({
     <div
       className={cn(
         "rounded-md transition-all duration-200",
-        courseId ? "hover:shadow-lg hover:scale-[1.02] cursor-pointer" : "cursor-default",
+        courseId ? "hover:shadow-lg hover:scale-[1.02] hover:-translate-y-0.5 cursor-pointer" : "cursor-default",
         variantStyles[variant],
         sizeStyles[size],
         className

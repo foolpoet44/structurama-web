@@ -8,16 +8,16 @@ export const TrainingGrid = () => {
         {/* Header */}
         <div className="grid grid-cols-[180px_1fr_1fr_180px_200px] gap-2 mb-4">
           <div className="col-span-1"></div>
-          <div className="text-center font-bold text-lg text-white py-3 rounded-t-lg" style={{ backgroundColor: '#5a5a5a' }}>
+          <div className="text-center font-bold text-lg text-white py-3 rounded-t-lg bg-[hsl(0,0%,35%)] shadow-md">
             집합 & e-러닝 과정
           </div>
-          <div className="text-center font-bold text-lg text-white py-3 rounded-t-lg" style={{ backgroundColor: '#5a5a5a' }}>
+          <div className="text-center font-bold text-lg text-white py-3 rounded-t-lg bg-[hsl(0,0%,35%)] shadow-md">
             엘리스 온라인 과정
           </div>
-          <div className="text-center font-bold text-lg text-white py-3 rounded-t-lg" style={{ backgroundColor: '#5a5a5a' }}>
+          <div className="text-center font-bold text-lg text-white py-3 rounded-t-lg bg-[hsl(0,0%,35%)] shadow-md">
             Udemy
           </div>
-          <div className="text-center font-bold text-lg text-white py-3 rounded-t-lg" style={{ backgroundColor: '#5a5a5a' }}>
+          <div className="text-center font-bold text-lg text-white py-3 rounded-t-lg bg-[hsl(0,0%,35%)] shadow-md">
             전사 생성형 AI 과정
           </div>
         </div>
@@ -128,9 +128,22 @@ export const TrainingGrid = () => {
           <div className="bg-card p-3 rounded-lg border space-y-2">
             <CourseCard title="RAG기초와 파이프 라인" variant="udemy" size="sm" courseId="udemy-rag-basics" />
             <CourseCard title="RAG를 위한 Langchain" variant="udemy" size="sm" courseId="udemy-rag-langchain" />
-            <CourseCard title="바이브 코딩과 MCP" variant="udemy" size="sm" courseId="udemy-vibe-coding-mcp" />
+            <CourseCard 
+              title="바이브 코딩과 MCP_커서로 시작하기" 
+              badges={[{ type: "new", label: "신규" }]}
+              variant="udemy" 
+              size="sm" 
+              courseId="udemy-vibe-coding-mcp" 
+            />
           </div>
-          <div className="bg-card p-3 rounded-lg border"></div>
+          <div className="bg-card p-3 rounded-lg border">
+            <CourseCard 
+              title="MS 코파일럿 고급 활용법" 
+              variant="ai" 
+              size="sm" 
+              courseId="genai-ms-copilot-advanced" 
+            />
+          </div>
         </div>
 
         {/* Intermediate Level */}
@@ -142,6 +155,13 @@ export const TrainingGrid = () => {
             description="연계 예정"
           />
           <div className="bg-card p-3 rounded-lg border space-y-2">
+            <CourseCard
+              title="바이브 코딩 기반의 MVP 구축(1일)"
+              badges={[{ type: "new", label: "신규" }]}
+              variant="prd"
+              size="sm"
+              courseId="vibe-coding-mvp"
+            />
             <CourseCard
               title="바이브 코딩 기반의 AX 문제 해결(2일)"
               badges={[{ type: "new", label: "신규" }]}

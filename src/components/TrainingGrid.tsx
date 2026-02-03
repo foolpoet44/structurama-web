@@ -109,7 +109,7 @@ export const TrainingGrid = () => {
               courseId="physical-ai-leader"
             />
             <CourseCard
-              title="AI Jump Up Camp(9일)"
+              title="AI Jump Up Camp(10일)"
               badges={[{ type: "selection", label: "선발" }]}
               variant="prd"
               courseId="ai-jump-up-camp"
@@ -132,19 +132,19 @@ export const TrainingGrid = () => {
           <div className="bg-card p-3 rounded-lg border">
             <div className="grid grid-cols-2 gap-2">
               <div className="space-y-2">
-                <CourseCard title="머신 러닝 II" isOnline variant="sw" size="sm" courseId="elice-machine-learning-2" />
-                <CourseCard title="머신 러닝 I" isOnline variant="sw" size="sm" courseId="elice-machine-learning-1" />
+                <CourseCard title="ⓔ 머신 러닝 II" isOnline variant="sw" size="sm" courseId="elice-machine-learning-2" />
+                <CourseCard title="ⓔ 머신 러닝 I" isOnline variant="sw" size="sm" courseId="elice-machine-learning-1" />
               </div>
               <div className="space-y-2">
                 <div className="flex gap-1">
-                  <CourseCard title="CNN/RNN 활용하기" isOnline variant="sw" size="sm" courseId="elice-cnn-rnn-application" />
-                  <CourseCard title="YOLO를 이용한 객체 인식" isOnline variant="sw" size="sm" courseId="elice-yolo-object-detection" />
+                  <CourseCard title="ⓔ CNN/RNN 활용하기" isOnline variant="sw" size="sm" courseId="elice-cnn-rnn-application" />
+                  <CourseCard title="ⓔ YOLO를 이용한 객체 인식" isOnline variant="sw" size="sm" courseId="elice-yolo-object-detection" />
                 </div>
                 <div className="flex gap-1">
-                  <CourseCard title="CNN/RNN 이해하기" isOnline variant="sw" size="sm" courseId="elice-cnn-rnn-understanding" />
-                  <CourseCard title="이미지 처리 알고리즘" isOnline variant="sw" size="sm" courseId="elice-image-processing" />
+                  <CourseCard title="ⓔ CNN/RNN 이해하기" isOnline variant="sw" size="sm" courseId="elice-cnn-rnn-understanding" />
+                  <CourseCard title="ⓔ 이미지 처리 알고리즘" isOnline variant="sw" size="sm" courseId="elice-image-processing" />
                 </div>
-                <CourseCard title="딥러닝 기초" isOnline variant="sw" size="sm" courseId="elice-deep-learning-basic" />
+                <CourseCard title="ⓔ 딥러닝 기초" isOnline variant="sw" size="sm" courseId="elice-deep-learning-basic" />
               </div>
             </div>
           </div>
@@ -194,8 +194,8 @@ export const TrainingGrid = () => {
           </div>
           <div className="bg-card p-3 rounded-lg border">
             <div className="grid grid-cols-2 gap-2">
-              <CourseCard title="파이썬 데이터 분석 기초 (2주)" isOnline variant="sw" size="sm" courseId="elice-python-data-analysis" />
-              <CourseCard title="파이썬 데이터 분석 기초_Training (2주)" isOnline variant="sw" size="sm" courseId="elice-python-data-analysis-training" />
+              <CourseCard title="ⓔ 파이썬 데이터 분석 기초" isOnline variant="sw" size="sm" courseId="elice-python-data-analysis" />
+              <CourseCard title="ⓔ 파이썬 데이터 분석 기초_Training" isOnline variant="sw" size="sm" courseId="elice-python-data-analysis-training" />
             </div>
           </div>
           <div className="bg-card p-3 rounded-lg border space-y-2">
@@ -211,7 +211,7 @@ export const TrainingGrid = () => {
           <LevelIndicator level="beginner" title="" />
           <div className="bg-card p-3 rounded-lg border space-y-2">
             <CourseCard 
-              title="바이브 코딩 기반의 MVP 구축(1일)" 
+              title="바이브 코딩을 통한 MVP 구축(1일)" 
               variant="prd" 
               size="sm" 
               courseId="vibe-coding-mvp" 
@@ -221,10 +221,10 @@ export const TrainingGrid = () => {
           <div className="bg-card p-3 rounded-lg border">
             <div className="grid grid-cols-2 gap-2">
               <div className="space-y-2">
-                <CourseCard title="생성형 AI 입문" isOnline variant="sw" size="sm" courseId="genai-intro" />
-                <CourseCard title="파이썬 기초 (파이썬 기초1, 2, NumPy/Pandas 기초)" isOnline variant="sw" size="sm" courseId="elice-python-basic" />
+                <CourseCard title="ⓔ 생성형 AI 입문" isOnline variant="sw" size="sm" courseId="genai-intro" />
+                <CourseCard title="ⓔ 파이썬 기초" isOnline variant="sw" size="sm" courseId="elice-python-basic" />
               </div>
-              <CourseCard title="파이썬 기초_Training (파이썬 기초문제집, NumPy/Pandas 작습서)" isOnline variant="sw" size="sm" courseId="elice-python-training" />
+              <CourseCard title="ⓔ 파이썬 기초_Training" isOnline variant="sw" size="sm" courseId="elice-python-training" />
             </div>
           </div>
           <div className="bg-card p-3 rounded-lg border space-y-2">

@@ -62,9 +62,9 @@ export const courseData: CourseDetail[] = [
   // =====================
   // 오프라인 집합교육 과정
   // =====================
-  {
+{
     id: "vibe-coding-mvp",
-    title: "바이브 코딩 기반의 MVP 구축",
+    title: "바이브 코딩을 통한 MVP 구축",
     category: "offline",
     level: "beginner",
     variant: "prd",
@@ -78,7 +78,7 @@ export const courseData: CourseDetail[] = [
     format: "오프라인 (사내)",
     requirements: "선택",
     location: "평택 러닝센터",
-    capacity: "30",
+    capacity: "30명",
     duration: "1일",
     cost: "-",
     criteria: {
@@ -87,9 +87,9 @@ export const courseData: CourseDetail[] = [
       passScore: "70"
     },
     modules: [
-      { id: "M1", title: "바이브 코딩 핵심 개념 및 프롬프트 작성법", type: "강의", hours: 1 },
-      { id: "M2", title: "업무 아이디어를 MVP로 만드는 구조화 기법 (SCQ·RICE 등)", type: "강의 실습", hours: 1 },
-      { id: "M3", title: "바이브 코딩으로 구현하는 MVP 실습 (Lovable, Glide 등)", type: "강의 실습", hours: 1 }
+      { id: "M1", title: "바이브 코딩 핵심 개념 및 프롬프트 작성법", type: "강의 실습" },
+      { id: "M2", title: "업무 아이디어를 MVP로 만드는 구조화 기법 (SCQ·RICE 등)", type: "강의 실습" },
+      { id: "M3", title: "바이브 코딩으로 구현하는 MVP 실습 (Lovable, Glide 등)", type: "강의 실습" }
     ],
     schedule: [
       { session: "1차", period: "4/6" },
@@ -101,9 +101,9 @@ export const courseData: CourseDetail[] = [
     notes: ["상기 일정은 강의를 준비 중에 여러 요인에 인하여 일정이 변경될 수 있으며, 정확한 일정은 러닝넷 홈페이지를 참조 부탁 드립니다."],
     nextCourses: ["ai-problem-solving"]
   },
-  {
-    id: "ai-literacy-ax-problem-solving",
-    title: "AI Literacy & AX Problem Solving",
+{
+    id: "ai-problem-solving",
+    title: "AI 기반 문제발굴/해결 실전",
     category: "offline",
     level: "intermediate",
     variant: "prd",
@@ -116,7 +116,7 @@ export const courseData: CourseDetail[] = [
     format: "오프라인 (사내)",
     requirements: "선택",
     location: "평택 러닝센터",
-    capacity: "30",
+    capacity: "30명",
     duration: "2일",
     cost: "교육비용 이체 건은 사전에 안내 예정",
     criteria: {
@@ -124,47 +124,20 @@ export const courseData: CourseDetail[] = [
       ratio: "참여 50% / 태도 50%",
       passScore: "70"
     },
+    modules: [
+      { id: "M1", title: "AI리터러시 기본 / AI 기반의 현업 문제 해결 로드맵", type: "강의 실습" },
+      { id: "M2", title: "프롬프트 사고법 & AX 사고체계", type: "강의 실습" },
+      { id: "M3", title: "AX Problem Solving 실전(문제발굴 및 정의)", type: "강의 실습" }
+    ],
     schedule: [
       { session: "1차", period: "6/8~9" },
       { session: "2차", period: "8/10~11" },
       { session: "3차", period: "11/2~3" }
     ],
-    instructor: "마소캠퍼스",
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" },
     notes: ["상기 일정은 강의를 준비 중에 여러 요인에 인하여 일정이 변경될 수 있으며, 정확한 일정은 러닝넷 홈페이지를 참조 부탁 드립니다."]
   },
-  {
-    id: "vibe-coding-ax-problem-solving",
-    title: "바이브 코딩 기반의 AX 문제 해결",
-    category: "offline",
-    level: "intermediate",
-    variant: "prd",
-    isNew: true,
-    objectives: [
-      "코드 없이 문제 해결 과정을 설계·구현하는 Vibe Coding 사고체계를 습득한다",
-      "단순 자동화를 넘어, 업무 플로우 자체를 재설계하는 AX 문제 해결 역량을 확보한다."
-    ],
-    target: "생산기술원 구성원",
-    format: "오프라인 (사내)",
-    requirements: "선택",
-    location: "평택 러닝센터",
-    capacity: "30",
-    duration: "2일",
-    cost: "교육비용 이체 건은 사전에 안내 예정",
-    criteria: {
-      standard: 100,
-      ratio: "참여 50% / 태도 50%",
-      passScore: "70"
-    },
-    schedule: [
-      { session: "1차", period: "6/22~23" },
-      { session: "2차", period: "8/31~9/1" }
-    ],
-    instructor: "사외강사",
-    manager: { name: "조대근 책임", email: "dk.cho@lge.com" },
-    notes: ["상기 일정은 강의를 준비 중에 여러 요인에 인하여 일정이 변경될 수 있으며, 정확한 일정은 러닝넷 홈페이지를 참조 부탁 드립니다."]
-  },
-  {
+{
     id: "ai-jump-up-camp",
     title: "AI Jump Up Camp",
     category: "offline",
@@ -176,7 +149,7 @@ export const courseData: CourseDetail[] = [
     ],
     target: "생산기술원 구성원",
     format: "집합교육",
-    requirements: "파이썬 활용 데이터분석 Basic 이수자 수준 AX 역량 확보, 본 학습 현업 DX 과제 인터뷰 진행",
+    requirements: "파이썬 활용 데이터분석 Basic 이수자 수준 AX 역량 확보, 현업 DX 과제 인터뷰 진행",
     location: "러닝센터 복합동",
     capacity: "선발",
     duration: "10일",
@@ -187,22 +160,24 @@ export const courseData: CourseDetail[] = [
       passScore: "80"
     },
     modules: [
-      { id: "실습", title: "현업 AX 과제 실습 / 전문가 멘토링 지원", type: "실습" },
-      { id: "발표1", title: "모델 정의서 발표, 피드백 및 수정", type: "발표" },
-      { id: "발표2", title: "모델 구현, 피드백 및 수정, 중간 발표", type: "발표" },
-      { id: "최종", title: "시험 운영, 성능 개선, 최적화, 최종 발표", type: "발표" }
+      { id: "M1", title: "AX 과제 문제정의서 Review / 현업 데이터 기반 과제 검토 및 방향성 설정", type: "강의 실습" },
+      { id: "M2", title: "파이썬 활용 데이터 분석 Advanced", type: "강의 실습" },
+      { id: "M3", title: "파이썬 활용 데이터 분석 Professional", type: "강의 실습" },
+      { id: "M4", title: "현업 AX 과제 실습 / 전문가 멘토링 지원 / 모델 정의서 발표, 피드백 및 수정 / 모델 구현, 중간 발표", type: "강의 실습" },
+      { id: "M5", title: "시험 운영, 성능 개선, 최적화, 최종 발표", type: "발표" }
     ],
     schedule: [
-      { session: "1차수", period: "4월 ~ 6월 (대상자 별도 안내)" }
+      { session: "1차수", period: "4월~6월 (대상자 별도 안내)" }
     ],
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" },
     notes: [
+      "선발과정",
       "현업문제를 가지고 실습하면서 실제 활용에 대한 자신감을 얻을 수 있었음",
       "현업 문제에 활용할 수 있는 다양한 예제와 최신 기술동향을 배울 수 있어 도움이 되었으며, 향후에 활용해보고 싶다는 의지가 생겼음"
     ],
     nextCourses: ["physical-ai-leader", "lg-ai-expert-course"]
   },
-  {
+{
     id: "physical-ai-leader",
     title: "Physical AI 리더 양성과정",
     category: "offline",
@@ -226,17 +201,18 @@ export const courseData: CourseDetail[] = [
       passScore: "70"
     },
     modules: [
-      { id: "M1", title: "Physical AI 개념 및 필요성 / CPS(Cyber Physical System) 기반 스마트 제조 구조 이해", type: "강의" },
-      { id: "M2", title: "설비·공정 데이터 수집 및 신호 해석 기초 / IoT/센서 기반 계측 기술 / 공정 이상 탐지·Log 분석 / Test Mining", type: "강의 실습" },
-      { id: "M3", title: "디지털 트윈 모델링 & 운영 시뮬레이션 / 데이터 기반 대리모델(서로게이트) / 이산사건 시뮬레이션(DES), 에이전트 기반(ABS)", type: "강의 실습" },
-      { id: "M4", title: "머신러닝/딥러닝 기반 물리 데이터 분석 / 시계열·진동·전류·온도 신호의 전처리/특징추출 / 지도/비지도 기반 이상탐지", type: "강의 실습" },
+      { id: "M1", title: "Physical AI & 스마트팩토리 개론 / Physical AI 개념 및 필요성 / CPS 기반 스마트 제조 구조 이해", type: "강의 실습" },
+      { id: "M2", title: "설비·공정 데이터 수집 및 신호 해석 기초 / IoT/센서 기반 계측 기술 / 공정 이상 탐지·Log 분석·Test Mining", type: "강의 실습" },
+      { id: "M3", title: "디지털 트윈 모델링 & 운영 시뮬레이션 / 데이터 기반 대리모델(서로게이트) / 이산사건 시뮬레이션(DES), 에이전트 기반(ABS) / 병목 분석, What-if/최적화 및 동기화", type: "강의 실습" },
+      { id: "M4", title: "머신러닝/딥러닝 기반 물리 데이터 분석 / 시계열·진동·전류·온도 신호의 전처리/특징추출 / 지도/비지도 기반 이상탐지 / 공정 편차 원인 규명, 피처 중요도 해석(Shapley 개요)", type: "강의 실습" },
       { id: "M5", title: "로보틱스(산업용·협동로봇·AMR) 제조 현장 적용 및 제어", type: "강의 실습" }
     ],
     schedule: [
-      { session: "1차수", period: "7월 ~ 8월 (대상자 별도 안내)" }
+      { session: "1차수", period: "7월~8월 (대상자 별도 안내)" }
     ],
     instructor: "외부대학교 교수진",
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" },
+    notes: ["상기 일정은 강의를 준비 중에 여러 요인에 인하여 일정이 변경될 수 있으며, 정확한 일정은 러닝넷 홈페이지를 참조 부탁 드립니다."],
     nextCourses: ["lg-ai-expert-course"]
   },
   {
@@ -279,9 +255,9 @@ export const courseData: CourseDetail[] = [
   // =====================
   // 엘리스 온라인 과정
   // =====================
-  {
+{
     id: "elice-python-basic",
-    title: "파이썬 기초",
+    title: "ⓔ 파이썬 기초",
     category: "elice",
     level: "beginner",
     variant: "sw",
@@ -304,14 +280,19 @@ export const courseData: CourseDetail[] = [
       ratio: "수강 50% / Quiz 50%",
       passScore: "진도 90% and 최종 TEST 70점 이상"
     },
+    modules: [
+      { id: "M1", title: "Python기초 1: 출력 / 기본자료형 / 변수 / 자료형의 연산", type: "강의 실습" },
+      { id: "M2", title: "Python기초 2: 기초자료형 II / 문자열리스트 활용, 튜플, 딕셔너리 / 함수와 메서드 / 모듈과 패키지", type: "강의 실습" },
+      { id: "M3", title: "Numpy/Pandas 기초: NumPy 사용해보기 / Pandas의 기본 / Pandas 심화 / Matplotlib 데이터 시각화", type: "강의 실습" }
+    ],
     instructor: "엘리스",
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" },
     scheduleNote: "신청일로부터 3개월 간 자율 학습",
     nextCourses: ["elice-python-training"]
   },
-  {
+{
     id: "elice-python-training",
-    title: "파이썬 기초_Training",
+    title: "ⓔ 파이썬 기초_Training",
     category: "elice",
     level: "beginner",
     variant: "sw",
@@ -333,11 +314,12 @@ export const courseData: CourseDetail[] = [
     },
     instructor: "엘리스",
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" },
-    scheduleNote: "신청일로부터 3개월 간 자율 학습"
+    scheduleNote: "신청일로부터 3개월 간 자율 학습",
+    notes: ["본 과정은 문법, 통계, 개념이해가 주 목적이 아닌, 숙련도 향상을 통한 자발적 현업활용을 위해 다양한 유형의 데이터를 활용한 [반복], [실습]에 목적을 둔 과정으로, \"ⓔ파이썬 기초\" 과정의 후속 과정임"]
   },
   {
     id: "elice-python-data-analysis",
-    title: "파이썬 데이터 분석 기초",
+    title: "ⓔ 파이썬 데이터 분석 기초",
     category: "elice",
     level: "intermediate",
     variant: "sw",
@@ -364,7 +346,7 @@ export const courseData: CourseDetail[] = [
   },
   {
     id: "elice-python-data-analysis-training",
-    title: "파이썬 데이터 분석 기초_Training",
+    title: "ⓔ 파이썬 데이터 분석 기초_Training",
     category: "elice",
     level: "intermediate",
     variant: "sw",
@@ -396,7 +378,7 @@ export const courseData: CourseDetail[] = [
   },
   {
     id: "elice-machine-learning-1",
-    title: "머신 러닝 I",
+    title: "ⓔ 머신 러닝 I",
     category: "elice",
     level: "advanced",
     variant: "sw",
@@ -430,7 +412,7 @@ export const courseData: CourseDetail[] = [
   },
   {
     id: "elice-machine-learning-2",
-    title: "머신 러닝 II",
+    title: "ⓔ 머신 러닝 II",
     category: "elice",
     level: "advanced",
     variant: "sw",
@@ -453,10 +435,10 @@ export const courseData: CourseDetail[] = [
       passScore: "진도 90% and 최종 TEST 70점 이상"
     },
     modules: [
-      { id: "회귀", title: "회귀(Regression) 알고리즘", type: "강의 실습" },
-      { id: "분류", title: "분류(Classification) 알고리즘", type: "강의 실습" },
-      { id: "비지도", title: "비지도학습(Unsupervised-Learning) 알고리즘", type: "강의 실습" },
-      { id: "의사결정", title: "의사결정 나무(Decision Tree) 알고리즘", type: "강의 실습" }
+      { id: "M1", title: "회귀(Regression) 알고리즘: 회귀 개념 알아보기 / 회귀 분석 개념 이해하기 / 회귀분석 알고리즘 구현하기 실습", type: "강의 실습" },
+      { id: "M2", title: "분류(Classification) 알고리즘: 분류 개념과 로지스틱 회귀 / 회귀와 분류의 차이점 / 로지스틱 회귀 실습", type: "강의 실습" },
+      { id: "M3", title: "비지도학습(Unsupervised-Learning) 알고리즘: 비지도 학습 / 클러스터링 / K-Means 클러스터링 실습", type: "강의 실습" },
+      { id: "M4", title: "의사결정 나무(Decision Tree) 알고리즘: 간단한 이진 트리 분류기 만들기 / 의사결정 나무의 특성", type: "강의 실습" }
     ],
     instructor: "엘리스",
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" },
@@ -464,7 +446,7 @@ export const courseData: CourseDetail[] = [
   },
   {
     id: "elice-deep-learning-basic",
-    title: "딥러닝 기초",
+    title: "ⓔ 딥러닝 기초",
     category: "elice",
     level: "advanced",
     variant: "sw",
@@ -479,20 +461,26 @@ export const courseData: CourseDetail[] = [
     requirements: "선택",
     location: "LG PRI Elice 사이트",
     capacity: "제한 없음",
-    duration: "2개월 (15시간)",
+    duration: "2개월",
     cost: "146,000원 (미이수자 급여공제)",
     criteria: {
       standard: 100,
       ratio: "수강 50% / Quiz 50%",
       passScore: "진도 90% and 최종 TEST 70점 이상"
     },
+    modules: [
+      { id: "M1", title: "딥러닝 개론 / 퍼셉트론 / 퍼셉트론 작동 예시 구현하기 / 텐서플로우와 딥러닝 학습방법", type: "강의 실습" },
+      { id: "M2", title: "딥러닝 모델의 학습방법 / Gradient descent 알고리즘 구현하기", type: "강의 실습" },
+      { id: "M3", title: "딥러닝 학습의 문제점 / GD vs SGD(Stochastic Gradient descent)", type: "강의 실습" },
+      { id: "M4", title: "다양한 분야의 딥러닝 / 이미지 분야 딥러닝 / 자연어 처리분야 딥러닝 / 이미지 데이터 확인하기 실습", type: "강의 실습" }
+    ],
     instructor: "엘리스",
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" },
     scheduleNote: "신청일로부터 2개월 간 자율 학습"
   },
   {
     id: "elice-cnn-rnn-understanding",
-    title: "CNN/RNN 이해하기",
+    title: "ⓔ CNN/RNN 이해하기",
     category: "elice",
     level: "advanced",
     variant: "sw",
@@ -519,7 +507,7 @@ export const courseData: CourseDetail[] = [
   },
   {
     id: "elice-cnn-rnn-application",
-    title: "CNN/RNN 활용하기",
+    title: "ⓔ CNN/RNN 활용하기",
     category: "elice",
     level: "advanced",
     variant: "sw",
@@ -546,7 +534,7 @@ export const courseData: CourseDetail[] = [
   },
   {
     id: "elice-image-processing",
-    title: "이미지 처리 알고리즘",
+    title: "ⓔ 이미지 처리 알고리즘",
     category: "elice",
     level: "advanced",
     variant: "sw",
@@ -578,7 +566,7 @@ export const courseData: CourseDetail[] = [
   },
   {
     id: "elice-yolo-object-detection",
-    title: "YOLO를 이용한 객체 인식",
+    title: "ⓔ YOLO를 이용한 객체 인식",
     category: "elice",
     level: "advanced",
     variant: "sw",
@@ -924,33 +912,6 @@ export const courseData: CourseDetail[] = [
     capacity: "30",
     duration: "5일",
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" }
-  },
-  {
-    id: "ai-problem-solving",
-    title: "AI 기반 문제발굴/해결 실전",
-    category: "offline",
-    level: "intermediate",
-    variant: "prd",
-    isNew: true,
-    objectives: [
-      "AI 관점에서 현업 문제를 구조화하고 발굴하는 역량 확보",
-      "AI 기반 솔루션 설계 및 실전 적용 능력 향상"
-    ],
-    target: "생산기술원 구성원",
-    format: "오프라인 (사내)",
-    requirements: "선택",
-    location: "평택 러닝센터",
-    capacity: "30",
-    duration: "2일",
-    cost: "교육비용 이체 건은 사전에 안내 예정",
-    criteria: {
-      standard: 100,
-      ratio: "참여 50% / 태도 50%",
-      passScore: "70"
-    },
-    instructor: "마소캠퍼스",
-    manager: { name: "조대근 책임", email: "dk.cho@lge.com" },
-    notes: ["상기 일정은 강의를 준비 중에 여러 요인에 인하여 일정이 변경될 수 있으며, 정확한 일정은 러닝넷 홈페이지를 참조 부탁 드립니다."]
   },
   {
     id: "ms-copilot-master",

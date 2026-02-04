@@ -26,10 +26,10 @@ const CourseDetail = () => {
   }
 
   const levelLabels = {
-    expert: "AI 직무자 (Expert)",
-    advanced: "AI 업무수행자 (Advanced)",
-    intermediate: "중급 (Intermediate)",
-    beginner: "초급 (Beginner)",
+    expert: "전문가",
+    advanced: "고급",
+    intermediate: "중급",
+    beginner: "초급",
   };
 
   const categoryLabels = {

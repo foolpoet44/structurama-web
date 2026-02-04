@@ -22,7 +22,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-muted-foreground/10 py-6 mt-8">
         <div className="max-w-[1400px] mx-auto px-8 text-center text-sm text-muted-foreground">
-          © 2026 생산기술원 Employee Experience & Growth Team. All rights reserved.
+          © 2026 PRI Employee eXperience&Growth Team. All rights reserved.
         </div>
       </footer>
     </div>

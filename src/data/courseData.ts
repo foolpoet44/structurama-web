@@ -30,6 +30,9 @@ export interface CourseDetail {
   duration: string;
   cost?: string;
 
+  // Udemy 수강신청 URL
+  udemyUrl?: string;
+
   // 이수기준
   criteria?: {
     standard: number;
@@ -617,6 +620,7 @@ export const courseData: CourseDetail[] = [
     location: "Udemy",
     capacity: "제한 없음",
     duration: "자율 학습",
+    udemyUrl: "https://lg.udemy.com/course/maso-it-langchain-onc102/",
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" },
     notes: ["Udemy 컨텐츠 큐레이션은 연중 업데이트 됩니다."]
   },
@@ -635,13 +639,14 @@ export const courseData: CourseDetail[] = [
     location: "Udemy",
     capacity: "제한 없음",
     duration: "자율 학습",
+    udemyUrl: "https://lg.udemy.com/course/nadocoding-langchain/",
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" }
   },
   {
     id: "udemy-vibe-coding-mcp",
-    title: "바이브 코딩과 MCP",
+    title: "바이브 코딩과 MCP_커서로 시작하기",
     category: "udemy",
-    level: "advanced",
+    level: "intermediate",
     variant: "udemy",
     objectives: [
       "바이브 코딩의 개념과 커서(Cursor) 활용법 학습",
@@ -652,13 +657,14 @@ export const courseData: CourseDetail[] = [
     location: "Udemy",
     capacity: "제한 없음",
     duration: "자율 학습",
+    udemyUrl: "https://lg.udemy.com/course/maso-ai-cursor-onc115/learn/lecture/50625395#overview",
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" }
   },
   {
     id: "udemy-ml-basics",
     title: "인공지능 이해를 위한 머신러닝 기초 다지기",
     category: "udemy",
-    level: "advanced",
+    level: "intermediate",
     variant: "udemy",
     objectives: [
       "머신러닝의 기초 개념 이해",
@@ -669,6 +675,7 @@ export const courseData: CourseDetail[] = [
     location: "Udemy",
     capacity: "제한 없음",
     duration: "자율 학습",
+    udemyUrl: "https://lg.udemy.com/course/mlpart-1/",
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" }
   },
   {
@@ -686,13 +693,14 @@ export const courseData: CourseDetail[] = [
     location: "Udemy",
     capacity: "제한 없음",
     duration: "자율 학습",
+    udemyUrl: "https://lg.udemy.com/course/best-artificial-neural-networks/",
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" }
   },
   {
     id: "udemy-statistics-ds",
     title: "비즈니스 분석 및 DS를 위한 핵심통계학",
     category: "udemy",
-    level: "intermediate",
+    level: "beginner",
     variant: "udemy",
     objectives: [
       "비즈니스 분석을 위한 통계학 기초 학습",
@@ -703,6 +711,7 @@ export const courseData: CourseDetail[] = [
     location: "Udemy",
     capacity: "제한 없음",
     duration: "자율 학습",
+    udemyUrl: "https://lg.udemy.com/course/best-business-analysis/learn/lecture/29650616#overview",
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" }
   },
   {
@@ -720,6 +729,7 @@ export const courseData: CourseDetail[] = [
     location: "Udemy",
     capacity: "제한 없음",
     duration: "자율 학습",
+    udemyUrl: "https://lg.udemy.com/course/microsoft-365-copilot/",
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" }
   },
 
@@ -797,18 +807,19 @@ export const courseData: CourseDetail[] = [
   {
     id: "genai-ms-copilot-advanced",
     title: "MS 코파일럿 고급 활용법",
-    category: "genai",
+    category: "udemy",
     level: "advanced",
-    variant: "ai",
+    variant: "udemy",
     objectives: [
       "MS Copilot의 고급 기능 이해 및 실무 적용",
       "AI 기반 업무 생산성 극대화 기법 습득"
     ],
     target: "생산기술원 구성원",
-    format: "온라인",
-    location: "전사 생성형 AI 플랫폼",
+    format: "온라인 (Udemy)",
+    location: "Udemy",
     capacity: "제한 없음",
     duration: "자율 학습",
+    udemyUrl: "https://lg.udemy.com/course/maso-ai-copilot-onc100/learn/lecture/46273407#overview",
     manager: { name: "조대근 책임", email: "dk.cho@lge.com" }
   },
   {

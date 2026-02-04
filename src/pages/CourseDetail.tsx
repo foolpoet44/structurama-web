@@ -3,7 +3,7 @@ import { getCourseById } from "@/data/courseData";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Calendar, MapPin, Users, Clock, Mail, User, BookOpen, Target, CheckCircle } from "lucide-react";
+import { ArrowLeft, Calendar, MapPin, Users, Clock, Mail, User, BookOpen, Target, CheckCircle, ExternalLink } from "lucide-react";
 
 const CourseDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -63,6 +63,17 @@ const CourseDetail = () => {
               <Badge className="bg-badge-selection text-white">선발</Badge>
             )}
           </div>
+          {/* Udemy 수강신청 버튼 */}
+          {course.udemyUrl && (
+            <div className="mt-4">
+              <a href={course.udemyUrl} target="_blank" rel="noopener noreferrer">
+                <Button className="bg-[#a435f0] hover:bg-[#8710d8] text-white font-semibold px-6 py-2">
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  과정 개요 확인 및 수강신청
+                </Button>
+              </a>
+            </div>
+          )}
         </div>
       </header>
 

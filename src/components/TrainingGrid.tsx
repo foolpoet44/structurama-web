@@ -26,8 +26,7 @@ export const TrainingGrid = () => {
         <div className="grid grid-cols-[180px_1fr_1fr_180px_200px] gap-2 mb-3">
           <LevelIndicator
             level="expert"
-            title="AI 직무자"
-            subtitle="(전문가과정 별도 문의)"
+            title=""
           />
           <div className="bg-card p-3 rounded-lg border">
             <div className="grid grid-cols-2 gap-2">
@@ -90,8 +89,7 @@ export const TrainingGrid = () => {
         <div className="grid grid-cols-[180px_1fr_1fr_180px_200px] gap-2 mb-3">
           <LevelIndicator
             level="advanced"
-            title="AI 업무수행자"
-            subtitle="또는 AI 공통 역량 확보"
+            title=""
           />
           <div className="bg-card p-3 rounded-lg border space-y-2">
             <CourseCard
@@ -164,8 +162,6 @@ export const TrainingGrid = () => {
           <LevelIndicator
             level="intermediate"
             title=""
-            subtitle="전사 AX 인증체계"
-            description="연계 예정"
           />
           <div className="bg-card p-3 rounded-lg border space-y-2">
             <CourseCard

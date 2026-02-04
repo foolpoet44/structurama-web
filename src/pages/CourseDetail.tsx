@@ -348,7 +348,7 @@ const CourseDetail = () => {
       {/* Footer */}
       <footer className="bg-muted py-6 mt-8">
         <div className="max-w-[1200px] mx-auto px-8 text-center text-sm text-muted-foreground">
-          © 2026 Manufacturing AX Training System. All rights reserved.
+          © 2026 PRI Employee eXperience&Growth Team. All rights reserved.
         </div>
       </footer>
     </div>

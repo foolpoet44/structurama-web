@@ -14,7 +14,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/structurama-web">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/course/:id" element={<CourseDetail />} />
